@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #ffffff;
+}
+
+.bg-gradient {
+    background: linear-gradient(90deg, #003366, #004080); 
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffcc00; 
+    border-bottom: 2px solid #ffcc00;
+}
+
+.section-content {
+    display: none;
+    padding: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section-content.active {
+    display: block;
+}
+.profile-pic img {
+    width: 400px; 
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 10px 10px 20px grey;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.profile-pic img:hover {
+    transform: scale(1.05); 
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.3); 
+    cursor: pointer;
+}
+.profile-pic img {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #ffcc00;
+}
+
+button {
+    background-color: #004080; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    color: black;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #ffcc00; 
+    outline: none;
+}
+
+#projects {
+    background-color: #f5f5f5; 
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+    background-color: #ffffff; 
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project h3 {
+    color: #003366; 
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.form-group i {
+    margin-right: 10px;
+    color: #ffcc00;
+}
+
+.form-control {
+    padding-left: 40px; 
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+
+@media screen and (max-width: 768px) {
+    .project {
+        padding: 15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}

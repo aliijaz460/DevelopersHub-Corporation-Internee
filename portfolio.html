@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header class="bg-gradient">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a href="#about" class="nav-link" data-target="about">About Me</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link" data-target="projects">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="container mt-5 section-content">
+        <div class="row">
+            <div class="col-md-6 col-12 text-center">
+                <div class="profile-pic">
+                    <img src="profilepicali.jpg" alt="Profile Picture" class="img-fluid" style="width: 400px; border-radius: 50%; height: 400px; box-shadow: 10px 10px 20px grey;">
+                    <p>I am Muhammad Ali, a BSCS student skilled in programming, web development, flutter, and computer networks. I demonstrate expertise in executing multiple university projects, showcasing hands-on skills in software development, problem-solving, and teamwork.</p>
+  
+                </div>
+            </div>
+            <div class="col-md-6 col-12"><br>
+
+                <h2>Educational Background</h2>
+                <div class="education">
+                    <div class="education-item">
+                        <h3>Riphah International University, Lahore</h3>
+                        <p><em>2021 - Continue</em><br>Bachelor’s of Science in Computer Science</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Govt. Civil Lines College, Lahore</h3>
+                        <p><em>2019 - 2021</em><br>FSC Pre-Engineering</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>The Educator, Gulshan-e-Ravi, Lahore</h3>
+                        <p><em>2017 - 2019</em><br>Matric</p>
+                    </div>
+                </div>
+
+                <h2>Hobbies</h2>
+                <p>I enjoy traveling to explore new places and cultures. In my spare time, I love programming, solving problems, and creating web applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container mt-5 section-content">
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>Travelling Application</h3>
+            <p>I have developed a travel app where users can explore destinations like Naran, Swat, and more. The app displays rental options to facilitate seamless travel experiences.</p>
+        </div>
+        <div class="project">
+            <h3>Quiz Application</h3>
+            <p>I have created a quiz application where users can log in, attempt quizzes, and view their scores.</p>
+        </div>
+        <div class="project">
+            <h3>Task Management App</h3>
+            <p>Build an application for managing daily tasks or to-do lists, with features such as task categories, deadlines, and reminders.</p>
+        </div>
+        <div class="project">
+            <h3>Recipe Finder</h3>
+            <p>Create a web app that allows users to search for recipes based on ingredients they have at home.</p>
+        </div>
+    </section>
+    
+
+        <section id="contact" class="container mt-5 section-content">
+            <h1>Contact Me</h1>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">
+                        <i class="fas fa-user"></i> Name:
+                    </label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">
+                        <i class="fas fa-envelope"></i> Email:
+                    </label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">
+                        <i class="fas fa-phone"></i> Phone Number:
+                    </label>
+                    <input type="tel" id="phone" name="phone" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">
+                        <i class="fas fa-comment"></i> Message:
+                    </label>
+                    <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <p id="successMessage" style="display:none;">Your message has been sent!</p>
+        
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="portfolio.js"></script>
+</body>
+</html>
